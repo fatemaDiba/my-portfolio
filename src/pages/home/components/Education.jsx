@@ -7,7 +7,7 @@ const Education = () => {
         </h2>
         <div className="flex flex-col md:flex-row gap-10 justify-center">
           {/* c-1 */}
-          <div className="py-6 px-10 bg-[#457b9d] rounded-xl border-t-4 rounded-t-2xl border-[#003049]  hover:bg-[#003049] shadow-2xl">
+          <div className="py-6 px-10 bg-[#457b9d] rounded-xl border-t-4 rounded-t-2xl border-[#003049] cursor-pointer hover:bg-[#003049] shadow-2xl">
             <h2 className="text-lg md:text-xl font-semibold mb-2">
               B.Sc. in CSE
             </h2>
@@ -18,7 +18,7 @@ const Education = () => {
               graduation year is 2026. My current CGPA 3.96.
             </p>
           </div>
-          <div className="py-6 px-10 bg-[#457b9d] rounded-xl border-t-4 rounded-t-2xl border-[#003049]  hover:bg-[#003049] shadow-2xl">
+          <div className="py-6 px-10 bg-[#457b9d] rounded-xl border-t-4 rounded-t-2xl border-[#003049] cursor-pointer hover:bg-[#003049] shadow-2xl">
             <h2 className="text-lg md:text-xl font-semibold mb-2">HSC</h2>
             <p className="text-base md:text-lg mb-4">
               Uttara High School & college
@@ -29,7 +29,7 @@ const Education = () => {
               was Dhaka. I got 5.00 out of 5 from Science.
             </p>
           </div>
-          <div className="py-6 px-10 bg-[#457b9d] rounded-xl border-t-4 rounded-t-2xl border-[#003049]  hover:bg-[#003049] shadow-2xl">
+          <div className="py-6 px-10 bg-[#457b9d] rounded-xl border-t-4 rounded-t-2xl border-[#003049] cursor-pointer hover:bg-[#003049] shadow-2xl">
             <h2 className="text-lg md:text-xl font-semibold mb-2">SSC</h2>
             <p className="text-base md:text-lg mb-4">
               Uttara Girls High School & college

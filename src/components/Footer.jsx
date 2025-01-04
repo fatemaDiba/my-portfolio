@@ -2,7 +2,7 @@ import { FaFacebookF, FaGithub, FaLinkedin } from "react-icons/fa6";
 
 export const Footer = () => {
   return (
-    <footer className="flex flex-col md:flex-row justify-between footer bg-neutral text-neutral-content items-center py-10 px-14 md:px-40">
+    <footer className="flex gap-5 justify-between footer bg-neutral text-neutral-content items-center py-10 px-14 md:px-40">
       <aside>
         <p className="">
           Copyright © {new Date().getFullYear()} - All right reserved

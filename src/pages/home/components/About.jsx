@@ -17,7 +17,7 @@ const About = () => {
             <img
               src={img}
               alt="diba"
-              className="border-5 border-purple-600 rounded-full md:w-full w-1/2 place-self-center"
+              className=" rounded-full md:w-full w-1/2 place-self-center"
             />
           </div>
           <div className="px-5 md:px-0">

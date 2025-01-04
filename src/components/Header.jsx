@@ -87,10 +87,10 @@ const Header = () => {
     </>
   );
   return (
-    <header className="z-50 fixed left-0 right-0 bg-[#151515]/50 drop-shadow-sm">
-      <div className="w-11/12 md:container lg:w-9/12 mx-auto flex justify-between items-center py-3 text-white">
+    <header className="z-50 fixed left-0 right-0 bg-[#151515]/50 drop-shadow-sm border-b-2 border-[#4a87c4]">
+      <div className="w-11/12 md:container lg:w-9/12 mx-auto flex justify-between items-center py-3 text-white px-5 md:px-0">
         <Link to="/">
-          <h4 className="font-black md:text-2xl">Fatema</h4>
+          <h4 className="font-black md:text-2xl ">Fatema</h4>
         </Link>
         <nav className="nav">
           <motion.ul
