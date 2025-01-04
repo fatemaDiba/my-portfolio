@@ -38,6 +38,18 @@ const Header = () => {
       </li>
       <li>
         <Link
+          to="education"
+          smooth={true}
+          duration={500}
+          spy={true}
+          activeClass="active"
+          className="cursor-pointer"
+        >
+          Education
+        </Link>
+      </li>
+      <li>
+        <Link
           to="skills"
           smooth={true}
           duration={500}

@@ -1,9 +1,9 @@
 const Education = () => {
   return (
-    <div className="bg-slate-200 py-10 text-white/90">
+    <section id="education" className="bg-slate-200 py-10 text-white/90">
       <div className="w-11/12 md:container lg:w-9/12 mx-auto mb-10 px-20 md:px-0">
         <h2 className="text-2xl text-black md:text-4xl font-semibold text-center mb-10 md:mb-14">
-          Education
+          My <span className="text-[#064789]">Education</span>
         </h2>
         <div className="flex flex-col md:flex-row gap-10 justify-center">
           {/* c-1 */}
@@ -42,7 +42,7 @@ const Education = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
