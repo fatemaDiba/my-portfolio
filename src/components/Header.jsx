@@ -88,7 +88,7 @@ const Header = () => {
             transition={{ type: "spring", stiffness: 100, damping: 20 }}
           >
             {navItems}
-            <button className="color-accent py-3 px-2 md:px-5 rounded-md">
+            <button className="hover:bg-slate-600 color-accent py-3 px-2 md:px-5 rounded-md">
               Download Resume
             </button>
           </motion.ul>
