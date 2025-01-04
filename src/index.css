@@ -6,11 +6,11 @@
 
 body {
   font-family: "Poppins", serif;
-  background-color: #2d3032;
+  color: black;
 }
 
 .color-accent {
-  background-color: #9615db;
+  background-color: #427aa1;
 }
 
 .nav ul li a {
@@ -33,5 +33,5 @@ body {
   bottom: -0.3rem !important;
   width: 100% !important;
   height: 4px !important;
-  background-color: #9615db !important;
+  background-color: #064789 !important;
 }
