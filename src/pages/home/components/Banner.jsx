@@ -55,10 +55,16 @@ const Banner = () => {
               <FaLinkedin />
             </a>
           </div>
-          <button className="font-bold hover:bg-blue-800 color-accent py-3 px-2 md:px-5 rounded-md flex mx-auto md:mx-0">
-            Download Resume
-            <MdOutlineDownloadForOffline className="text-2xl ml-2" />
-          </button>
+          <a
+            href="/PortfolioTask.pdf"
+            download="PortfolioTask.pdf"
+            className="mt-5 inline-block"
+          >
+            <button className="font-bold hover:bg-blue-800 color-accent py-3 px-2 md:px-5 rounded-md flex mx-auto md:mx-0">
+              Download Resume
+              <MdOutlineDownloadForOffline className="text-2xl ml-2" />
+            </button>
+          </a>
         </div>
       </div>
     </section>
