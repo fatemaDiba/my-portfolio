@@ -1,0 +1,57 @@
+[
+  {
+    "id": "1",
+    "name": "BiteBuddy Food Sharing",
+    "short_description": "This repository contains the backend of the BiteBuddy, a web application that allows users to manage foods, add foods, update foods and add to requested list operations.",
+    "description": "The purpose of the Food Sharing website is to create a community-driven platform where individuals can connect through their love for food, share meals, reduce food waste, and promote sustainable eating habits. By encouraging collaboration, fostering meaningful connections, and providing opportunities for sharing culinary experiences, the platform aims to build a vibrant and inclusive network of food enthusiasts committed to making a positive impact on their community and the environment.",
+    "drawbacks": [
+      "Ensuring food quality and safety might be difficult, as shared food may not meet proper handling or storage standards.",
+      "Food that isn’t picked up on time may still end up as waste, defeating the platform’s purpose."
+    ],
+    "technologies": [
+      "Tailwind CSS",
+      "React",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "FireBase Auth"
+    ],
+    "image": "/projects/BiteBuddy.png",
+    "live_link": "https://bitebuddy-by-fatema.surge.sh/",
+    "client_git": "https://github.com/fatemaDiba/bitebuddy-client",
+    "server_git": "https://github.com/fatemaDiba/bitebuddy-server"
+  },
+  {
+    "id": "2",
+    "name": "Movie Portal",
+    "short_description": "This repository contains the backend of the Movie Portal, a web application that allows users to manage movies, add movies, update movies and add to favorite list operations.",
+    "description": "The purpose of the Movie Portal project is to provide a comprehensive platform for movie enthusiasts, connecting users through shared interests in films, offering personalized recommendations, and promoting discussions to enhance the cinematic experience while fostering a vibrant community of film lovers.",
+    "drawbacks": [
+      "JWT authentication is not implemented, leaving the platform less secure.",
+      "If the platform includes streaming or sharing of movie clips, securing the necessary licenses could be costly and complicated.",
+      "Anyone can add movies,reducing control and raise privacy concerns among users."
+    ],
+    "technologies": [
+      "Tailwind CSS",
+      "React",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "FireBase Auth"
+    ],
+    "image": "/projects/Movie.png",
+    "live_link": "https://movie-portal-by-fatema.surge.sh/",
+    "client_git": "https://github.com/fatemaDiba/movie-portal-client",
+    "server_git": "https://github.com/fatemaDiba/movie-portal-server"
+  },
+  {
+    "id": "3",
+    "name": "Pet Adoption",
+    "short_description": "Peddy is a pet adoption platform built with Tailwind CSS and Vanilla JavaScript. It showcases dynamic pet cards, popups with detailed information, and features like liking or adopting pets.",
+    "description": "Peddy is a user-friendly pet adoption website crafted using Tailwind CSS and Vanilla JavaScript. The platform dynamically displays pet cards with details such as images, names, and descriptions. It includes interactive popups with comprehensive information about each pet and functionalities like liking pets to mark favorites or adopting them via a simple modal. While the project showcases dynamic data handling and responsive design, it was a learning experience that revealed areas for improvement in terms of functionality and scalability.",
+    "technologies": ["HTML", "Tailwind CSS", "JavaScript"],
+    "image": "/projects/Peddy.png",
+    "live_link": "https://peddy-adoption-by-fatema.surge.sh/",
+    "client_git": "https://github.com/mahmuddevs/peddy-pet-adoption"
+  }
+]

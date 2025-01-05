@@ -56,7 +56,7 @@ const Banner = () => {
             </a>
           </div>
           <button className="font-bold hover:bg-blue-800 color-accent py-3 px-2 md:px-5 rounded-md flex mx-auto md:mx-0">
-            Download Resume{" "}
+            Download Resume
             <MdOutlineDownloadForOffline className="text-2xl ml-2" />
           </button>
         </div>
