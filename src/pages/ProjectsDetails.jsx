@@ -1,12 +1,81 @@
 import { useEffect } from "react";
 import { useState } from "react";
+import { useParams } from "react-router-dom";
 
 const ProjectsDetails = () => {
-  const [projects, setProjects] = useState([]);
+  const { id } = useParams();
+  const [project, setProject] = useState([]);
 
-  useEffect(() => {}, []);
+  useEffect(() => {
+    fetch("/projects.json")
+      .then((res) => res.json())
+      .then((data) => {
+        const singleData = data.find((item) => item.id === id);
+        setProject(singleData);
+      })
+      .catch((err) => {
+        console.error(err);
+      });
+  }, []);
 
-  return <div>ProjectsDetails</div>;
+  return (
+    <div className="bg-slate-200 py-10 text-white/90 ">
+      <div className="w-11/12 md:container lg:w-9/12 mx-auto mb-10 px-20 md:px-0 md:mt-24">
+        <div>
+          <div className="py-10 px-10 md:px-20 bg-[#457b9d] rounded-xl border-t-4 rounded-t-2xl border-[#003049] cursor-pointer hover:bg-[#003049] shadow-2xl">
+            <h2 className="text-2xl md:text-4xl text-center font-semibold mb-5">
+              Project Overview
+            </h2>
+            <p className="text-xl md:text-2xl font-semibold mb-4">
+              {project.name}
+            </p>
+            <p>
+              Live_link : <span className="text-sm">{project.live_link}</span>
+            </p>
+            <p>
+              Client_Git : <span className="text-sm">{project.client_git}</span>
+            </p>
+            <p>
+              Sever_Git : <span className="text-sm">{project.server_git}</span>
+            </p>
+            <div className="border  border-white/70 mb-4 mt-4"></div>
+            <div className="space-y-3">
+              <p className="text-sm md:text-base">
+                Short Description : {project.short_description}
+              </p>
+              <p className="text-sm md:text-base">
+                Description : {project.description}
+              </p>
+              <p className="text-sm md:text-base ">
+                Drawbacks :
+                <ul className="list-disc ml-10">
+                  {project?.drawbacks?.map((draw, index) => {
+                    return <li className="text-sm md:text-base">{draw}</li>;
+                  })}
+                </ul>
+              </p>
+
+              <p>
+                <span className="text-sm md:text-base">Technologies:</span>
+              </p>
+              <ul className="w-[60%] text-sm md:text-base grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                {project?.technologies?.map((tech, index) => {
+                  return (
+                    <li
+                      key={index}
+                      className="p-2  bg-white/70 text-sm font-semibold text-black border rounded-xl text-center"
+                    >
+                      {tech}
+                    </li>
+                  );
+                })}
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
 };
 
 export default ProjectsDetails;

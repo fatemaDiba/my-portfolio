@@ -49,6 +49,11 @@
     "name": "Pet Adoption",
     "short_description": "Peddy is a pet adoption platform built with Tailwind CSS and Vanilla JavaScript. It showcases dynamic pet cards, popups with detailed information, and features like liking or adopting pets.",
     "description": "Peddy is a user-friendly pet adoption website crafted using Tailwind CSS and Vanilla JavaScript. The platform dynamically displays pet cards with details such as images, names, and descriptions. It includes interactive popups with comprehensive information about each pet and functionalities like liking pets to mark favorites or adopting them via a simple modal. While the project showcases dynamic data handling and responsive design, it was a learning experience that revealed areas for improvement in terms of functionality and scalability.",
+    "drawbacks": [
+      "The project appears to handle data statically or locally, which limits real-time updates or the ability to fetch live data from a server.",
+      "As the application grows, rendering large amounts of dynamic content with Vanilla JavaScript might result in slower performance compared to optimized frameworks.",
+      "The focus on interactivity might overlook accessibility standards, potentially excluding users with disabilities."
+    ],
     "technologies": ["HTML", "Tailwind CSS", "JavaScript"],
     "image": "/projects/Peddy.png",
     "live_link": "https://peddy-adoption-by-fatema.surge.sh/",

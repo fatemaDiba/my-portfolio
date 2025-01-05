@@ -1,7 +1,11 @@
 import { FaLink } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 
 const Card = ({ data }) => {
   const { id, name, short_description, image, live_link } = data;
+
+  const handleDetails = (id) => {};
+
   return (
     <div className="flex flex-col h-full">
       <div className="rounded-xl overflow-hidden shadow-2xl flex flex-col h-full">
@@ -25,9 +29,13 @@ const Card = ({ data }) => {
           </a>
           <p className="text-gray-500 text-sm">{short_description}</p>
         </div>
-        <button className="mt-auto w-[50%] text-sm mx-auto font-semibold hover:bg-blue-800 color-accent py-2 px-2 md:px-5 rounded-2xl mb-5">
+        <Link
+          to={`/details/${id}`}
+          onClick={() => handleDetails(id)}
+          className="mt-auto w-[50%] text-sm mx-auto font-semibold hover:bg-[#35627a]  color-accent py-2 px-2 md:px-5 rounded-2xl mb-5 text-center"
+        >
           View Details
-        </button>
+        </Link>
       </div>
     </div>
   );
