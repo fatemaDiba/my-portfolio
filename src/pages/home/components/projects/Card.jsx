@@ -10,7 +10,7 @@ const Card = ({ data }) => {
     <div className="flex flex-col h-full">
       <div className="rounded-xl overflow-hidden shadow-2xl flex flex-col h-full">
         <div className="relative">
-          <a href={live_link}>
+          <a href={live_link} target="_blank">
             <img className="w-full h-56 object-contain" src={image} alt="" />
             <div className="hover:bg-transparent transition duration-300 absolute bottom-0 top-0 right-0 left-0 bg-gray-900 opacity-25"></div>
           </a>
@@ -23,6 +23,7 @@ const Card = ({ data }) => {
         <div className="px-6 py-4 flex-grow">
           <a
             href={live_link}
+            target="_blank"
             className="font-medium text-lg inline-block hover:text-indigo-600 transition duration-500 ease-in-out mb-2"
           >
             {name}
