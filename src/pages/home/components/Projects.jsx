@@ -22,7 +22,7 @@ const Projects = () => {
           <h2 className="text-2xl md:text-4xl text-center font-semibold">
             My <span className="text-[#064789]">Projects</span>
           </h2>
-          <p className="text-center w-[70%] mx-auto">
+          <p className="text-center lg:w-[70%] mx-auto">
             Here are some of the projects I’ve worked on, showcasing my skills
             in building functional and visually appealing web applications.
           </p>

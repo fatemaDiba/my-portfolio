@@ -2,7 +2,7 @@ import { FaFacebookF, FaGithub, FaLinkedin } from "react-icons/fa6";
 
 export const Footer = () => {
   return (
-    <footer className="flex gap-5 justify-between footer bg-neutral text-neutral-content items-center py-10 px-14 md:px-40">
+    <div className="flex gap-5 justify-between footer bg-neutral text-neutral-content items-center py-10 px-14 md:px-40">
       <aside>
         <p className="">
           Copyright © {new Date().getFullYear()} - All right reserved
@@ -24,13 +24,13 @@ export const Footer = () => {
           <FaGithub />
         </a>
         <a
-          href="https://www.linkedin.com/in/fatema-tabassum-a34033262"
+          href="https://www.linkedin.com/in/fatema-tabassum-diba/"
           target="_blank"
           className="border-2  border-white/70 p-2 rounded-full hover:-translate-y-1 duration-300 transition-transform"
         >
           <FaLinkedin />
         </a>
       </nav>
-    </footer>
+    </div>
   );
 };

@@ -20,12 +20,20 @@ const ProjectsDetails = () => {
 
   return (
     <div className="bg-slate-200 py-10 text-white/90 ">
-      <div className="w-11/12 md:container lg:w-9/12 mx-auto mb-10 px-20 md:px-0 md:mt-24">
-        <div>
-          <div className="py-10 px-10 md:px-20 bg-[#457b9d] rounded-xl border-t-4 rounded-t-2xl border-[#003049] cursor-pointer hover:bg-[#003049] shadow-2xl">
-            <h2 className="text-2xl md:text-4xl text-center font-semibold mb-5">
-              Project Overview
-            </h2>
+      <div className="w-11/12 md:container lg:w-9/12 mx-auto mb-10 md:mt-24">
+        <div className="py-10 px-10 md:px-20 bg-[#457b9d] rounded-xl border-t-4 rounded-t-2xl border-[#003049] shadow-2xl">
+          <h2 className="text-2xl md:text-4xl text-center font-semibold mb-5">
+            Project Overview
+          </h2>
+          <div>
+            <p className="text-xl md:text-2xl font-semibold mb-4">Gallery</p>
+            <div className="grid md:grid-cols-3 gap-4 mb-4">
+              {project?.images?.map((img, index) => {
+                return <img key={index} src={img} alt="" />;
+              })}
+            </div>
+          </div>
+          <div>
             <p className="text-xl md:text-2xl font-semibold mb-4">
               {project.name}
             </p>
@@ -58,12 +66,12 @@ const ProjectsDetails = () => {
               <p>
                 <span className="text-sm md:text-base">Technologies:</span>
               </p>
-              <ul className="w-[60%] text-sm md:text-base grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+              <ul className="lg:w-[60%] text-sm md:text-base grid grid-cols-2 lg:grid-cols-3 gap-4">
                 {project?.technologies?.map((tech, index) => {
                   return (
                     <li
                       key={index}
-                      className="p-2  bg-white/70 text-sm font-semibold text-black border rounded-xl text-center"
+                      className="p-2 bg-white/70 text-sm font-semibold text-black border rounded-xl text-center"
                     >
                       {tech}
                     </li>

@@ -17,6 +17,7 @@
       "FireBase Auth"
     ],
     "image": "/projects/BiteBuddy.png",
+    "images": ["/bitebuddy/1.png", "/bitebuddy/2.png", "/bitebuddy/3.png"],
     "live_link": "https://bitebuddy-by-fatema.surge.sh/",
     "client_git": "https://github.com/fatemaDiba/bitebuddy-client",
     "server_git": "https://github.com/fatemaDiba/bitebuddy-server"
@@ -40,6 +41,7 @@
       "FireBase Auth"
     ],
     "image": "/projects/Movie.png",
+    "images": ["/movie/1.png", "/movie/2.png", "/movie/3.png"],
     "live_link": "https://movie-portal-by-fatema.surge.sh/",
     "client_git": "https://github.com/fatemaDiba/movie-portal-client",
     "server_git": "https://github.com/fatemaDiba/movie-portal-server"
@@ -56,7 +58,8 @@
     ],
     "technologies": ["HTML", "Tailwind CSS", "JavaScript"],
     "image": "/projects/Peddy.png",
+    "images": ["/pet/1.png", "/pet/2.png", "/pet/3.png"],
     "live_link": "https://peddy-adoption-by-fatema.surge.sh/",
-    "client_git": "https://github.com/mahmuddevs/peddy-pet-adoption"
+    "client_git": "https://github.com/fatemaDiba/peddy-pet-adoption"
   }
 ]

@@ -4,7 +4,7 @@ import { IoMdClose } from "react-icons/io";
 import { motion } from "motion/react";
 import { Link, scroller } from "react-scroll";
 import logo from "../assets/img/logo.png";
-import { Router, Link as RouterLink, useLocation } from "react-router-dom";
+import { Link as RouterLink, useLocation } from "react-router-dom";
 
 const Header = () => {
   const { pathname } = useLocation();
@@ -112,7 +112,7 @@ const Header = () => {
         </a>
         <nav className="nav">
           <motion.ul
-            className={`uppercase flex flex-col lg:flex-row lg:items-center gap-6 font-semibold fixed lg:static top-0  w-56 h-screen lg:h-auto lg:w-auto p-8 md:p-4 bg-[#151515]/90 lg:bg-transparent text-sm `}
+            className={`uppercase flex flex-col lg:flex-row lg:items-center gap-6 font-semibold fixed lg:static top-0  w-56 h-screen lg:h-auto lg:w-auto p-8 md:p-4 bg-[#3f9094]/70 lg:bg-transparent text-sm `}
             initial={{ right: "-14rem" }}
             animate={{ right: navOpen ? "0" : "-14rem" }}
             transition={{ type: "spring", stiffness: 100, damping: 20 }}
