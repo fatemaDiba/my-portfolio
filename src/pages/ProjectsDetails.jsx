@@ -37,15 +37,26 @@ const ProjectsDetails = () => {
             <p className="text-xl md:text-2xl font-semibold mb-4">
               {project.name}
             </p>
-            <p>
-              Live_link : <span className="text-sm">{project.live_link}</span>
-            </p>
-            <p>
-              Client_Git : <span className="text-sm">{project.client_git}</span>
-            </p>
-            <p>
-              Sever_Git : <span className="text-sm">{project.server_git}</span>
-            </p>
+            <div>
+              Live_link :
+              <a href={project.live_link} className="text-sm">
+                {project.live_link}
+              </a>
+            </div>
+            <div>
+              Client_Git :
+              <a href={project.client_git} className="text-sm">
+                {project.client_git}
+              </a>
+            </div>
+            {project.server_git && (
+              <div>
+                Sever_Git :
+                <a href={project.server_git} className="text-sm">
+                  {project.server_git}
+                </a>
+              </div>
+            )}
             <div className="border  border-white/70 mb-4 mt-4"></div>
             <div className="space-y-3">
               <p className="text-sm md:text-base">
