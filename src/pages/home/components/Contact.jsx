@@ -29,36 +29,38 @@ const Contact = () => {
   return (
     <section id="contact" className="bg-slate-200 py-10 text-white/90">
       <div className="w-11/12 md:container lg:w-9/12 mx-auto mb-20 px-10 md:px-0">
-        <h2 className="text-black text-center text-2xl md:text-4xl font-semibold mb-14">
+        <h2 className="text-black text-center text-2xl md:text-4xl font-semibold mb-7 md:mb-14">
           Contact With Me
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-7">
-          <div className="w-full md:w-11/12 py-10 px-10 bg-[#3c6e71] rounded-xl border-t-4 rounded-t-2xl border-[#003049] cursor-pointer shadow-2xl place-self-center mb-5 md:mb-0">
+          <div className="w-full md:w-11/12 p-6 md:p-10 bg-[#3c6e71] rounded-xl border-t-4 rounded-t-2xl border-[#003049] cursor-pointer shadow-2xl place-self-center mb-5 md:mb-0">
             <img src="/assets/contact.png" alt="" className="w-14" />
             <div className="border border-white/70 mb-4 mt-4"></div>
             <div className="space-y-2">
               <a
                 href="mailto:fatematabassum00700@gmail.com"
                 target="_blank"
-                className="text-sm md:text-base flex items-center"
+                className="text-sm md:text-base flex items-center overflow-hidden"
               >
-                <MdEmail className="text-xl mr-2" />:
-                fatematabassum00700@gmail.com
+                <MdEmail className="text-xl shrink-0 mr-2" />:
+                <span className="overflow-hidden text-ellipsis ml-2">
+                  fatematabassum00700@gmail.com
+                </span>
               </a>
               <a
-                href="tel:+88018868563976"
+                href="tel:+8801886856396"
                 target="_blank"
                 className="text-sm md:text-base flex items-center"
               >
-                <MdAddCall className="text-xl mr-2" />: +88018868563976
+                <MdAddCall className="text-xl mr-2" />: +8801886856396
               </a>
               <a
-                href="https://wa.me/018868563976"
+                href="https://wa.me/01886856396"
                 target="_blank"
                 className="text-sm md:text-base flex items-center"
               >
-                <FaWhatsapp className="text-xl mr-2" />: 018868563976
+                <FaWhatsapp className="text-xl mr-2" />: 01886856396
               </a>
             </div>
           </div>

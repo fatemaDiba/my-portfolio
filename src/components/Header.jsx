@@ -108,7 +108,7 @@ const Header = () => {
     <header className="z-50 fixed left-0 right-0 bg-[#151515]/50 drop-shadow-sm border-b-2 border-[#4a87c4]">
       <div className="w-11/12 md:container lg:w-9/12 mx-auto flex justify-between items-center py-3 text-white px-5 md:px-0">
         <a href="/">
-          <img src={logo} alt="" className="w-24" />
+          <img src={logo} alt="" className="w-16 md:w-24" />
         </a>
         <nav className="nav">
           <motion.ul
@@ -118,7 +118,7 @@ const Header = () => {
             transition={{ type: "spring", stiffness: 100, damping: 20 }}
           >
             {navItems}
-            <a href="/PortfolioTask.pdf" download="PortfolioTask.pdf">
+            <a href="/resume_of_fatema_tabassum_diba.pdf" download>
               <button className="hover:bg-blue-800 color-accent py-3 px-2 md:px-5 rounded-md">
                 Download Resume
               </button>

@@ -19,8 +19,8 @@ const ProjectsDetails = () => {
   }, []);
 
   return (
-    <div className="bg-slate-200 py-10 text-white/90 ">
-      <div className="w-11/12 md:container lg:w-9/12 mx-auto mb-10 md:mt-24">
+    <div className="bg-slate-200 py-10  text-white/90 ">
+      <div className="w-11/12 md:container lg:w-9/12 mx-auto mb-10 mt-20">
         <div className="py-10 px-10 md:px-20 bg-[#457b9d] rounded-xl border-t-4 rounded-t-2xl border-[#003049] shadow-2xl">
           <h2 className="text-2xl md:text-4xl text-center font-semibold mb-5">
             Project Overview

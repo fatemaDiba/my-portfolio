@@ -5,7 +5,7 @@ import { MdOutlineDownloadForOffline } from "react-icons/md";
 
 const Banner = () => {
   return (
-    <section id="banner" className="pt-14 md:pt-24 bg-slate-200">
+    <section id="banner" className="pt-20 md:pt-24 bg-slate-200">
       <div className="w-11/12 md:container lg:w-9/12 mx-auto grid place-items-center md:grid-cols-2 gap-10">
         <img
           src={img}
@@ -56,8 +56,8 @@ const Banner = () => {
             </a>
           </div>
           <a
-            href="/PortfolioTask.pdf"
-            download="PortfolioTask.pdf"
+            href="/resume_of_fatema_tabassum_diba.pdf"
+            download
             className="mt-5 inline-block"
           >
             <button className="font-bold hover:bg-blue-800 color-accent py-3 px-2 md:px-5 rounded-md flex mx-auto md:mx-0">
