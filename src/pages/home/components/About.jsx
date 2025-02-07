@@ -17,11 +17,11 @@ const About = () => {
             <img
               src={img}
               alt="diba"
-              className=" rounded-full md:w-full w-1/2 place-self-center"
+              className=" rounded-full md:w-[70%] w-1/2 place-self-center"
             />
           </div>
           <div className="px-5 md:px-0">
-            <p className="text-center md:text-start">
+            <p className="text-center md:text-start 2xl:w-10/12">
               I’m <strong>Fatema Tabassum</strong>, a dedicated
               <strong> Web Developer</strong> focused on creating user-friendly
               and visually captivating websites. With a strong foundation in

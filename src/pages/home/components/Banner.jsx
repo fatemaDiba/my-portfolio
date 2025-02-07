@@ -6,7 +6,7 @@ import { MdOutlineDownloadForOffline } from "react-icons/md";
 const Banner = () => {
   return (
     <section id="banner" className="pt-20 md:pt-24 bg-slate-200">
-      <div className="w-11/12 md:container lg:w-9/12 mx-auto grid place-items-center md:grid-cols-2 gap-10">
+      <div className="w-11/12 md:container lg:w-9/12 mx-auto grid place-items-center md:grid-cols-2 gap-10 md:gap-2">
         <img
           src={img}
           alt="diba"
